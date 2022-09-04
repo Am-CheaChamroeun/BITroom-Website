@@ -1,0 +1,275 @@
+/**
+* Template Name: Gp - v4.7.0
+* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar */
+.navbar-nav a {
+font-size: 15px;
+text-transform: uppercase;
+text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.carousel-item img{
+  height: 90vh;
+  width: 100%;
+}
+.carousel-inner:before {
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.6);
+z-index: 1;
+}
+.carousel-caption {
+bottom: 156px !important;
+z-index: 2;
+}
+.button-header{
+background-color: white !important;
+width: 13rem;
+height: 3.2rem;
+border-radius: 1rem !important;
+}
+
+/* Why BITroom */
+.why-bitroom{
+margin-top: 4rem;
+}
+.card1{
+/* background-color: #D9D9D9 !important; */
+  border: 1px solid #D9D9D9;
+  height: 350px;
+}
+.card1:hover{
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+.step{
+background-color: #D9D9D9;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+padding-bottom: 10px;
+padding-left: 15px;
+  padding-top: 2px;
+}
+
+/* Service */
+.service{
+margin-top: 4rem;
+}
+.button-service1{
+background-color: black !important;
+width: 14rem;
+border-radius: 1rem !important;
+  margin-top: 20px;
+}
+.button-service2{
+background-color: black !important;
+width: 14rem;
+border-radius: 1rem !important;
+  margin-top: 40px;
+}
+.card-background {
+background-color: rgb(29, 26, 26);
+}
+.card img{
+height: 350px;
+}
+.card img {
+opacity: 0.5;
+}
+  
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+
+section {
+  overflow: hidden;
+}
+
+.clients {
+  margin-top: 4rem;
+}
+.clients .swiper-slide img {
+  transition: 0.3s;
+}
+.project-image{
+  height: 210px;
+}
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffc451;
+}
+
+.client-title {
+  text-align: center;
+}
+.client-hr {
+  width: 100px;
+}
+.button-project{
+  background-color: black !important;
+  width: 13rem;
+  height: 3.2rem;
+  border-radius: 1rem !important;
+  }
+/*--------------------------------------------------------------
+# Testimonial
+--------------------------------------------------------------*/
+
+.testimonial{
+  margin-top: 4rem;
+}
+
+.testimonial-card{
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 3px 5px #888888;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+}
+
+.testimonial .icon i{
+  color:yellow
+}
+
+/* FAQ */
+.faq{
+  color: #fff;
+  background-color: #000;
+  margin-top: 4rem;
+}
+.title{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-top: 4rem;
+  font-size: 10rem;
+  color : white;
+}
+
+
+.questions-container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.question{
+  border-bottom: 1px solid #fff;
+}
+.question button{
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border:none;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.question p{
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.d-arrow{
+  transition: transform 0.5s ease-in ;
+  color: #fff;
+}
+
+/*add this class when click*/
+.question p.show{
+  max-height: 200px; 
+  opacity: 1;
+  padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+  transform: rotate(180deg);
+}
+
+/* Partner */
+
+.partner{
+  margin-top: 4rem;
+}
+.partner img{
+  width: 28rem;
+  height: 6.4rem;
+}
+
+
+
+
+/* Footer */
+.footer{
+  margin-top: 4rem;
+  background-color: black !important;
+  }
+.footer p{
+
+  font-size: 0.8rem;
+}
+.footer a{
+  text-decoration: none;
+}
+.footer input{
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  height: 2rem;
+  width: 12rem;
+}
+.footer button{
+border-radius: 5rem;
+width: 4rem;
+height: 2.2rem;
+background-color: #ff3334;
+color: white;
+}
+
