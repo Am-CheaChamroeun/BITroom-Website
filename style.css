@@ -188,49 +188,54 @@ section {
   color : white;
 }
 
-
-.questions-container{
-  max-width: 800px;
-  margin: 0 auto;
+/* faq */
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
 }
-
-.question{
-  border-bottom: 1px solid #fff;
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 }
-.question button{
-  width: 100%;
-  background-color: #000;
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 15px;
-  border:none;
-  outline: none;
-  font-size: 20px;
-  color: #fff;
-  font-weight: 700;
+  position: relative;
   cursor: pointer;
 }
-.question p{
-  max-height: 0;
-  opacity: 0;
-  line-height: 1.5;
-  overflow: hidden;
-  transition: all 0.6s ease;
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
 }
-.d-arrow{
-  transition: transform 0.5s ease-in ;
-  color: #fff;
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
-/*add this class when click*/
-.question p.show{
-  max-height: 200px; 
-  opacity: 1;
-  padding:0px 15px 30px 15px;
-}
-.question button .d-arrow.rotate{
-  transform: rotate(180deg);
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 /* Partner */
